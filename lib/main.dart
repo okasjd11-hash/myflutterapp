@@ -1,23 +1,11 @@
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
+
 import 'package:flutter/material.dart';
+import 'package:testflutter/HomeScreen.dart';
 
 void main(){
   runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
     home: HomeScreen(),
   ));
 }
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar:  AppBar(
-        title: Text("My-app"),
-        backgroundColor: Colors.white70,
-      ),
-    );
-  }
-}
